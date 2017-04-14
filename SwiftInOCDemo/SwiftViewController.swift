@@ -12,6 +12,12 @@ import UIKit
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.purple
+        
+        let mainVC = ViewController.init()
+        mainVC.hello()
+        DispatchQueue.main.async {
+            ViewController.sayBye()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -22,6 +28,7 @@ import UIKit
     public func myTitle() -> String {
         return "hahaha"
     }
+    
 }
 
 @objc class SwiftViewController2: UIViewController {

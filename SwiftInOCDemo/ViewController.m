@@ -54,5 +54,7 @@
 - (void)hello {
     NSLog(@"hello");
 }
-
++ (void)sayBye {
+    NSLog(@"bye!!!");
+}
 @end

@@ -12,5 +12,7 @@
 
 - (void)hello;
 
++ (void)sayBye;
+
 @end
 
